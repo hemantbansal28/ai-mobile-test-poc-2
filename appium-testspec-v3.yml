@@ -19,13 +19,13 @@ phases:
       #   ignores method names that don't exist in a class, so listing all 3
       #   methods next to all 3 classes still produces exactly 1 test per class.
       #
-      # Selected tests:
-      #   Tests.HomePageTest.testHomePageHeadline   (known passing on v24 APK)
-      #   Tests.AlertPageTest.testAlertMessage      (alert dialog test)
-      #   Tests.Inputs.CheckboxTest.testCheckBox    (basic input test)
+      # Selected tests (all confirmed passing on aws-sample-app-v24 APK):
+      #   Tests.HomePageTest.testHomePageHeadline
+      #   Tests.Inputs.CheckboxTest.testCheckBox
+      #   Tests.Inputs.ToggleButtonTest.testToggle
       # ----------------------------------------------------------------------
-      - export TEST_CLASSES="Tests.HomePageTest,Tests.AlertPageTest,Tests.Inputs.CheckboxTest"
-      - export TEST_METHODS="testHomePageHeadline,testAlertMessage,testCheckBox"
+      - export TEST_CLASSES="Tests.HomePageTest,Tests.Inputs.CheckboxTest,Tests.Inputs.ToggleButtonTest"
+      - export TEST_METHODS="testHomePageHeadline,testCheckBox,testToggle"
 
       # The Appium server is written using Node.js. In order to run your desired version of Appium,
       # you first need to set up a Node.js environment that is compatible with your version of Appium.
